@@ -70,6 +70,15 @@ def parse_planet_parameters(line, planet):
     **line** — строка с описание планеты.
     **planet** — объект планеты.
     """
+    list_of_data = line.split() 
+    print(f"line {line} —- list_of_data {list_of_data}") 
+    planet.R = float(list_of_data[1]) 
+    planet.color = list_of_data[2] 
+    planet.m = float(list_of_data[3]) 
+    planet.x = float(list_of_data[4]) 
+    planet.y = float(list_of_data[5]) 
+    planet.Vx = float(list_of_data[6]) 
+    planet.Vy = float(list_of_data[7])
     pass  # FIXME: not done yet...
 
 
